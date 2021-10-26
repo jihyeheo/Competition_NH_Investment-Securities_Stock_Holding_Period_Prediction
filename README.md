@@ -28,11 +28,21 @@ mrz_btp_dit_cd: 주거래업종구분<br>
  분산팽창요인을 가지고 비교 -> cus_age_stn_cd, cus_aet_stn_cd, tco_cus_grd_cd, lsg_sgm_cd, mkt_pr_tal_scl_tp_cd, stk_dit_cd 제거<br> 
 ![image](https://user-images.githubusercontent.com/64202709/138924975-9507a1dd-d35b-44ee-b425-fb8db5de2e5c.png)
 
-**편-안**
+**편-안**<br>
 베이스라인 : 86<br>
 다중공산성 제거 후 베이스라인 : 83.09<br>
 
-## 2) 2nd meeting :
+## 2) 2nd meeting : 모델링 [20211010]()
+- 전처리 과정 수정<br>
+: train["hist_d"] = train["hold_d"]*0.877 <br>
+이유 : train과 test의 차이가 가장 많이 나는 날을 계산해보면 0.877까지 곱해줄 수 있다.
+- 모델링 : regression<br>
+Pycaret으로 regression model 찾기<br>
+![image](https://user-images.githubusercontent.com/64202709/138925933-802c42c6-ce79-48c7-8380-fff41197fd31.png)<br>
+상위 순대로 regeressor model 돌려오기 숙제를 내주었다.<br>
+stacking 하다가 실패 .. [regression]()
+
+- 모델링 : Deep Learning<br>
 
 ## 3) 3rd meeting
 

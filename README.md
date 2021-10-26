@@ -19,7 +19,7 @@ mrz_btp_dit_cd: 주거래업종구분<br>
 5. stk_hld_test.csv : 20년 12월 이전에 매수하고 21년 이후에 고객이 전량 매도한 국내주식 보유기간 예측<br>
 [**columns**] act_id: 계좌 ID, iem_cd: 종목코드, byn_dt: 매수 일자, hist_d: 과거 보유일, submit_id: 제출ID, hold_d: 보유기간(일)<br>
 
-## 1) 1st meeting : 데이터 파악하기 [20211004]()
+## 1) 1st meeting : 데이터 파악하기 [20211004](https://github.com/jihyeheo/Competition_NH_Investment-Securities_Stock_Holding_Period_Prediction/blob/main/20211004_Meeting.ipynb)
 - baseline 따라하기
 : LGBRegressor(max_depth=6, n_estimators=2000, learning_rate=0.01,num_leaves=31), 5-fold
 - 상관 관계 분석(spearman)<br>
@@ -29,8 +29,8 @@ mrz_btp_dit_cd: 주거래업종구분<br>
 ![image](https://user-images.githubusercontent.com/64202709/138924975-9507a1dd-d35b-44ee-b425-fb8db5de2e5c.png)
 
 **편-안**
-베이스라인 : 86
-다중공산성 제거 후 베이스라인 : 83.09
+베이스라인 : 86<br>
+다중공산성 제거 후 베이스라인 : 83.09<br>
 
 ## 2) 2nd meeting :
 
@@ -39,3 +39,9 @@ mrz_btp_dit_cd: 주거래업종구분<br>
 
 ## 4) Final
 [Presentation]()
+
+
+
+```
+Reference : https://dacon.io/competitions/official/235798/overview/description
+```
